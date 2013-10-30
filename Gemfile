@@ -3,9 +3,10 @@ source 'http://ruby.taobao.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
-gem 'rb-readline'
+gem 'rb-readline',require: false
 # Use mysql as the database for Active Record
 group  :development,:test do
+  gem 'pry-rails'
   gem 'mysql2'
   gem 'rspec-rails'
   gem 'guard-rspec'
