@@ -3,6 +3,7 @@ source 'http://ruby.taobao.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
+gem 'bootstrap-sass'
 gem 'rb-readline',require: false
 # Use mysql as the database for Active Record
 group  :development,:test do
@@ -13,6 +14,9 @@ group  :development,:test do
   gem 'spork-rails'
   gem 'guard-spork'
   gem 'childprocess'
+  gem "better_errors"
+  gem "binding_of_caller"
+  gem 'meta_request'
 end
 
 group :test do
