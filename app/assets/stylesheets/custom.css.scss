@@ -148,7 +148,7 @@ input,textarea,select, .uneditable-input{
   @include box_sizing;
 }
 input {
-  height:auto !important
+  height:auto !important; 
 }
 .button_width{
   width: auto ;
@@ -162,7 +162,6 @@ input {
   }
 }
 
-.field_with_errors {
-  @extend .control-group;
-  @extend .error;
+.field_with_errors {    
+  @extend .has-error;
 }
