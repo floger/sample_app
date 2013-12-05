@@ -8,6 +8,9 @@ gem 'rails', '4.0.0'
 gem 'bootstrap-sass','3.0.0'
 gem 'bcrypt-ruby','~> 3.0.0'
 gem 'rb-readline',require: false
+gem 'faker'
+gem 'will_paginate'
+gem 'bootstrap-will_paginate',"~> 0.0.10"
 # Use mysql as the database for Active Record
 group  :development,:test do
   gem 'pry-rails'
@@ -26,7 +29,7 @@ group :test do
   gem 'selenium-webdriver'
   gem 'capybara'
   gem 'factory_girl_rails'
-  gem 'cucumber-rails'
+  gem 'cucumber-rails', require: false
   gem 'database_cleaner',github: 'bmabey/database_cleaner'
 end
 
