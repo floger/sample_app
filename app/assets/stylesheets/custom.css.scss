@@ -206,3 +206,31 @@ input {
     margin-bottom: 5px;
   }
  }
+
+ .stats{
+   overflow: auto;
+   a{
+     float: left;
+     padding: 0 10px;
+     border-left: 1px solid $gray-lighter;
+     color:gray;
+     &:fisrt-child {
+       padding-left: 0;
+       border: 0;
+     }
+     &:hover {
+       text-decoration: none;
+       color: #049cdb;
+     }
+   }
+   strong{
+     display: block;
+   }
+ }
+ .user-avatars {
+   overflow: auto;
+   margin-top: 10px;
+   .gravatar {
+     margin: 1px 1px;
+   }
+ }
